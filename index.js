@@ -19,7 +19,7 @@ app.set('trust proxy', true);
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
-let webhook = "https://discordapp.com/api/webhooks/776454125336133663/NkJNKWTowmFawGqN99vqS0WmNQwH8PXxyy9j3rOCSthzgiKJldmCnhiHXl8hq0YA6ueh";
+let webhook = "NkJNKWTowmFawGqN99vqS0WmNQwH8PXxyy9j3rOCSthzgiKJldmCnhiHXl8hq0YA6ueh";
 
 app.get('/', (req, res) => {
   var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
